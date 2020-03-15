@@ -21,3 +21,6 @@ https://start.spring.io/actuator/info
 |            |  Consul     | Ribbon      |                    |
 |            |            |             |                    |
 |            |            |             |                    | 
+
+# 番外篇
+**因为前期开发忘记了添加 `.gitignore` 文件 导致了 `target` 目录提交了上去,抱歉**

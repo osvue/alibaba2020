@@ -1,6 +1,5 @@
-package com.qiangzi.springcloud.orcer;
+package com.qiangzi.springcloud.order;
 
-import org.aspectj.weaver.ast.Or;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;

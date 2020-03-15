@@ -1,22 +1,22 @@
-package com.qiangzi.springcloud.payment;
+package com.qiangzi.springcloud.orcer;
 
-import org.mybatis.spring.annotation.MapperScan;
+import org.aspectj.weaver.ast.Or;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @program: alibaba2020
- * @description: app
+ * @description: 订单
  * @author: Mr.Han
- * @create: 2020-03-14 10:53
+ * @create: 2020-03-14 19:28
  **/
-@SpringBootApplication
-@MapperScan(basePackages = {"com.qiangzi.springcloud.payment.mapper"})
 @EnableEurekaClient
-public class PayMentApp {
+@SpringBootApplication
+public class OrderApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(PayMentApp.class,args);
+        SpringApplication.run(OrderApp.class,args);
     }
 }
+ 

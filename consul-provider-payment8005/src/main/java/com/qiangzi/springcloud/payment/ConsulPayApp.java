@@ -1,12 +1,8 @@
-package com.qiangzi.springcloud.order;
+package com.qiangzi.springcloud.payment;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
-import org.springframework.cloud.openfeign.EnableFeignClients;
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.client.RestTemplate;
 
 import javax.security.auth.login.Configuration;
 
@@ -18,12 +14,10 @@ import javax.security.auth.login.Configuration;
  **/
 @EnableDiscoveryClient
 @SpringBootApplication
-@EnableFeignClients
-public class ConsulOrderApp {
+public class ConsulPayApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConsulOrderApp.class,args);
+        SpringApplication.run(ConsulPayApp.class,args);
     }
-
 }
  

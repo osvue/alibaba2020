@@ -1,9 +1,16 @@
 package com.qiangzi.springcloud.order.controller;
 
 import com.qiangzi.springcloud.commons.utils.ResultBean;
+import com.qiangzi.springcloud.order.api.PaymentFeign;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+import javax.annotation.Resource;
 
 /**
  * @program: alibaba2020
@@ -13,10 +20,15 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RestController
 public class ConsulOrderControler {
+    @Resource
+    PaymentFeign paymentFeign;
 
-    @RequestMapping(value = "/consul/tes",method = RequestMethod.GET)
+    @RequestMapping(value = "/voids",method = RequestMethod.GET)
     public ResultBean<String> consul(){
-        return new ResultBean<>("hello World This is consol control");
+
+        System.out.println( paymentFeign);
+
+        return paymentFeign.consul();
     }
 }
  

@@ -5,20 +5,19 @@ https://start.spring.io/actuator/info
 
 **个人邮箱: hzqq110@163.com** 
 
-| 服务名称  (服务提供者)        | 端口号     | 备注 |
-| :------:                    | :------:  | :------: |
-| eureka-provider-payment8001 | 8001      |  eureka版本  |
-| zookeeper-provider-pay8004  |  8004     |  zK 版本 |
-|  本                         |  本        |  s |
-|  本                         |  本        |  s |
-|  本                         |  本        |  s |
+| service    | 注册发现     | 负载调用     |  服务熔断降级        |
+| :------:   | :------:    | :------:    | :------:           |
+|            | eureka      |OpenFeign    |  Hystrix           |
+|            | zookeeper   |  Feign      |                    |
+|            |  Consul     | Ribbon      |                    |
+|            |            |             |                    |
+|            |            |             |                    |
 
 
-
-| 服务名称                     | 端口号     | 备注 |
-| :------:                    | :------:  | :------: |
-| eureka-consumer-order80      |  80       | eureka |
-| eureka-server7001           |  7001      |  eureka注册中心 |
-| zookeeper-consumer-order80 |  80         |  zk        |
-|  本                         |  本        |  s |
-|  本                         |  本        |  s |
+| service    | 注册发现     | 负载调用     |  服务熔断降级        |
+| :------:   | :------:    | :------:    | :------:           |
+|            | eureka      |OpenFeign    |  Hystrix           |
+|            | zookeeper   |  Feign      |                    |
+|            |  Consul     | Ribbon      |                    |
+|            |            |             |                    |
+|            |            |             |                    | 

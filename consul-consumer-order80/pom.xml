@@ -13,6 +13,18 @@
 
 
     <dependencies>
+        <!--图形化界面-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+<!--            <version>2.2.2.RELEASE</version>-->
+        </dependency>
+
+        <!--服务熔断限流降级-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
         <!-- 服务调用 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

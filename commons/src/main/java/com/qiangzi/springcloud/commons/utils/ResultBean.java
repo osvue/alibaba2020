@@ -54,6 +54,19 @@ public class ResultBean<T> implements Serializable {
         this.data = data;
     }
 
+    public ResultBean(Integer code,T data) {
+        super();
+        this.data = data;
+        this.code = code;
+    }
+
+    public ResultBean(Integer code,String msg ) {
+        super();
+
+        this.code = code;
+        this.msg = msg;
+    }
+
     public ResultBean(Throwable e) {
         super();
         this.msg = e.toString();

@@ -1,0 +1,37 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name:  config-server   #注册进Eureka服务器的微服务名
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        #hostname: 127.0.0.1
+        service-name: ${spring.application.name}
+    config:
+      server:
+        git:
+          uri: https://github.com/theGifs/cooud_config.git   #GitHub上面的git仓库名字
+          ####搜索目录
+          search-paths:
+            - shard/dev
+      ####读取分支
+      label: master
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+##rabbitmq相关配置,暴露bus刷新配置的端点
+management:
+  endpoints: #暴露bus刷新配置的端点
+    web:
+      exposure:
+        include: 'bus-refresh'  #固定参数,参考上图 post/bus/refresh
+
+

@@ -1,0 +1,26 @@
+server:
+  port: 8005
+
+spring:
+  application:
+    name: consul-provider-payment
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+    #采样率值介于 0 到 1 之间，1 则表示全部采集
+    probability: 1
+  cloud:
+    #Config客户端配置
+    config:
+      label: master    #分支名称
+      name: ${spring.application.name}     #配置文件名称
+      profile: dev                    #读取后缀名称   上述3个综合：master分支上config-dev.yml的配置文件被读取
+      uri: http://localhost:9999      #配置中心地址k
+#服务注册到consol地址
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        #hostname: 127.0.0.1
+        service-name: ${spring.application.name}

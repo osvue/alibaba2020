@@ -3,6 +3,7 @@ package com.qiangzi.springcloud.payment.controller;
 import com.qiangzi.springcloud.commons.domain.OauthClientDetails;
 import com.qiangzi.springcloud.commons.utils.ResultBean;
 import com.qiangzi.springcloud.payment.service.IOauthClientDetailsService;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -18,6 +19,7 @@ import java.util.List;
  * @create: 2020-03-15 10:38
  **/
 @RestController
+@RefreshScope
 public class ConPayControler {
 
     @Resource

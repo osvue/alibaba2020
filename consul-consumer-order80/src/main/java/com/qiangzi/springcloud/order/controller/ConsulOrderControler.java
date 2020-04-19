@@ -20,20 +20,18 @@ import java.util.List;
  * @description: consu
  * @author: Mr.Han
  * @create: 2020-03-15 10:38
- **/
+ */
 @RestController
 public class ConsulOrderControler {
-    @Resource
-    PaymentFeign paymentFeign;
+  @Resource PaymentFeign paymentFeign;
 
-    @RequestMapping(value = "/oauth",method = RequestMethod.GET)
-    public ResultBean<List<OauthClientDetails>> consul(){
-         return paymentFeign.consul();
-    }
+  @RequestMapping(value = "/oauth", method = RequestMethod.GET)
+  public ResultBean<List<OauthClientDetails>> consul() {
+    return paymentFeign.consul();
+  }
 
-    @RequestMapping(value = "/oauth/{id}",method = RequestMethod.GET)
-    public ResultBean< OauthClientDetails > getbyid(@PathVariable String id){
-         return paymentFeign.getbyid(id);
-    }
+  @RequestMapping(value = "/oauth/{id}", method = RequestMethod.GET)
+  public ResultBean<OauthClientDetails> getbyid(@PathVariable String id) {
+    return paymentFeign.getbyid(id);
+  }
 }
- 

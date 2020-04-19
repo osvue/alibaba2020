@@ -10,30 +10,30 @@ import lombok.Data;
 @Data
 @TableName(value = "user")
 public class User implements Serializable {
-    @TableId(value = "userid", type = IdType.AUTO)
-    private Integer userid;
+  @TableId(value = "userid", type = IdType.AUTO)
+  private Integer userid;
 
-    @TableField(value = "username")
-    private String username;
+  @TableField(value = "username")
+  private String username;
 
-    @TableField(value = "userpwd")
-    private String userpwd;
+  @TableField(value = "userpwd")
+  private String userpwd;
 
-    @TableField(value = "sex")
-    private String sex;
+  @TableField(value = "sex")
+  private String sex;
 
-    @TableField(value = "address")
-    private String address;
+  @TableField(value = "address")
+  private String address;
 
-    private static final long serialVersionUID = 1L;
+  private static final long serialVersionUID = 1L;
 
-    public static final String COL_USERID = "userid";
+  public static final String COL_USERID = "userid";
 
-    public static final String COL_USERNAME = "username";
+  public static final String COL_USERNAME = "username";
 
-    public static final String COL_USERPWD = "userpwd";
+  public static final String COL_USERPWD = "userpwd";
 
-    public static final String COL_SEX = "sex";
+  public static final String COL_SEX = "sex";
 
-    public static final String COL_ADDRESS = "address";
+  public static final String COL_ADDRESS = "address";
 }

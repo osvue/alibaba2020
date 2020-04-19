@@ -9,15 +9,12 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @description: 网关服务
  * @author: Mr.Han
  * @create: 2020-03-16 11:44
- **/
+ */
 @EnableDiscoveryClient
 @SpringBootApplication
 public class GateApp {
 
-
-        public static void main(String[] args) {
-            SpringApplication.run(GateApp.class,args);
-        }
-
-    }
- 
+  public static void main(String[] args) {
+    SpringApplication.run(GateApp.class, args);
+  }
+}

@@ -11,16 +11,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
-/**
- * @author THE GIFTED
- */
+/** @author THE GIFTED */
 @Component
-@FeignClient(value = "consul-provider-payment" , fallback = PaymentBack.class)
+@FeignClient(value = "consul-provider-payment", fallback = PaymentBack.class)
 public interface PaymentFeign {
 
-    @RequestMapping(value = "/gets",method = RequestMethod.GET)
-      ResultBean<List<OauthClientDetails>> consul();
+  @RequestMapping(value = "/gets", method = RequestMethod.GET)
+  ResultBean<List<OauthClientDetails>> consul();
 
-    @RequestMapping(value = "/get/{id}",method = RequestMethod.GET)
-     ResultBean<OauthClientDetails> getbyid(@PathVariable(value = "id") String primary);
+  @RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
+  ResultBean<OauthClientDetails> getbyid(@PathVariable(value = "id") String primary);
 }

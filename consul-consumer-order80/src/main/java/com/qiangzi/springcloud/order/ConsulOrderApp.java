@@ -16,16 +16,14 @@ import javax.security.auth.login.Configuration;
  * @description: consul服务提供者
  * @author: Mr.Han
  * @create: 2020-03-15 10:36
- **/
+ */
 @EnableDiscoveryClient
 @SpringBootApplication
 @EnableFeignClients
 @EnableHystrix
 public class ConsulOrderApp {
 
-    public static void main(String[] args) {
-        SpringApplication.run(ConsulOrderApp.class,args);
-    }
-
+  public static void main(String[] args) {
+    SpringApplication.run(ConsulOrderApp.class, args);
+  }
 }
- 

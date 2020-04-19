@@ -17,25 +17,23 @@ import java.util.List;
  * @description: consu
  * @author: Mr.Han
  * @create: 2020-03-15 10:38
- **/
+ */
 @RestController
 @RefreshScope
 public class ConPayControler {
 
-    @Resource
-    IOauthClientDetailsService oauthClientDetailsService;
+  @Resource IOauthClientDetailsService oauthClientDetailsService;
 
-    @RequestMapping(value = "/gets",method = RequestMethod.GET)
-    public ResultBean<List<OauthClientDetails>> consul(){
-        return new ResultBean<>(oauthClientDetailsService.list());
-    }
+  @RequestMapping(value = "/gets", method = RequestMethod.GET)
+  public ResultBean<List<OauthClientDetails>> consul() {
+    return new ResultBean<>(oauthClientDetailsService.list());
+  }
 
-    @RequestMapping(value = "/get/{id}",method = RequestMethod.GET)
-    public ResultBean<OauthClientDetails> getbyid(@PathVariable(value = "id") String primary){
-if(primary.equals("abc")){
-    throw new RuntimeException("primaryKey");
-}
-        return new ResultBean<>( oauthClientDetailsService.getById(primary));
+  @RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
+  public ResultBean<OauthClientDetails> getbyid(@PathVariable(value = "id") String primary) {
+    if (primary.equals("abc")) {
+      throw new RuntimeException("primaryKey");
     }
+    return new ResultBean<>(oauthClientDetailsService.getById(primary));
+  }
 }
- 

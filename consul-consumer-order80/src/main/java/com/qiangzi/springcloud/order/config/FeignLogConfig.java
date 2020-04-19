@@ -9,13 +9,11 @@ import org.springframework.context.annotation.Configuration;
  * @description: 开启OpenFeign日志
  * @author: Mr.Han
  * @create: 2020-03-15 16:56
- **/
+ */
 @Configuration
 public class FeignLogConfig {
-    @Bean
-    Logger.Level feignLoggerLevel()
-    {
-        return Logger.Level.FULL;
-    }
+  @Bean
+  Logger.Level feignLoggerLevel() {
+    return Logger.Level.FULL;
+  }
 }
- 

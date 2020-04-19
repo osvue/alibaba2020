@@ -22,6 +22,9 @@
         <module>hystrix-provider-payment8001</module>
         <module>gateway8888</module>
         <module>config-server9999</module>
+        <module>alibaba-nacos-provider</module>
+        <module>alibaba-nacos-provider-bak2</module>
+        <module>alibaba-consumer86</module>
     </modules>
 
     <!-- 统一管理jar包版本 -->

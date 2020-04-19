@@ -10,11 +10,9 @@ import com.qiangzi.springcloud.commons.utils.ResultCode;
  * @description: ceshi
  * @author: Mr.Han
  * @create: 2020-03-16 07:50
- **/
-
+ */
 public class TS {
-    public static void main(String[] args) {
-        System.out.println(JsonUtil.objectToJson(new User()));
-    }
+  public static void main(String[] args) {
+    System.out.println(JsonUtil.objectToJson(new User()));
+  }
 }
- 

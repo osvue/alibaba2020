@@ -12,18 +12,17 @@ import java.util.List;
  * @description: Hystrix回调
  * @author: Mr.Han
  * @create: 2020-03-16 07:29
- **/
+ */
 @Component
 public class PaymentBack implements PaymentFeign {
 
-    @Override
-    public ResultBean<List<OauthClientDetails>> consul() {
-        return new ResultBean<>(ResultBean.UNKNOWN_EXCEPTION,null);
-    }
+  @Override
+  public ResultBean<List<OauthClientDetails>> consul() {
+    return new ResultBean<>(ResultBean.UNKNOWN_EXCEPTION, null);
+  }
 
-    @Override
-    public ResultBean<OauthClientDetails> getbyid(String primary) {
-          return new ResultBean<>(ResultBean.UNKNOWN_EXCEPTION,"服务繁忙");
-    }
+  @Override
+  public ResultBean<OauthClientDetails> getbyid(String primary) {
+    return new ResultBean<>(ResultBean.UNKNOWN_EXCEPTION, "服务繁忙");
+  }
 }
- 

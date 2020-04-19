@@ -14,18 +14,14 @@ import java.util.List;
  * @description: controller
  * @author: Mr.Han
  * @create: 2020-03-14 10:57
- **/
+ */
 @RestController
 public class PaymentController {
 
-    @Resource
-    IUserService userService;
+  @Resource IUserService userService;
 
-
-    @GetMapping("/user")
-    public ResultBean<List<User>> getUsers(){
-        return new ResultBean<>(userService.list());
-    }
-
+  @GetMapping("/user")
+  public ResultBean<List<User>> getUsers() {
+    return new ResultBean<>(userService.list());
+  }
 }
- 

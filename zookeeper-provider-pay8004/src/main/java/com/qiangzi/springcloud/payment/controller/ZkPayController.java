@@ -12,15 +12,14 @@ import javax.validation.Valid;
  * @description: zk
  * @author: Mr.Han
  * @create: 2020-03-15 09:13
- **/
+ */
 @RestController
 public class ZkPayController {
-    @Value("${server.port}")
-    String port;
-    @GetMapping(value = "/zk/pay/{ls}")
-    public String testZk(@PathVariable(value = "ls") String str){
-        return "yourPort"+port+" \t and "+"\t"+str;
+  @Value("${server.port}")
+  String port;
 
-    }
+  @GetMapping(value = "/zk/pay/{ls}")
+  public String testZk(@PathVariable(value = "ls") String str) {
+    return "yourPort" + port + " \t and " + "\t" + str;
+  }
 }
- 

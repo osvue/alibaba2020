@@ -15,14 +15,16 @@
 |            |            |             |              |            |             |                    | 
 
 
-| service    | mq           | 
-| :------:   | :------:    | 
-|            |              |
-|            |              |
-|            |             | 
-|            |            |  
-|            |            |  
+| service    | mq         |             | 
+| :------:   | :------:   | :------:    | 
+|            | RabbitMq  |              |
+|            |RocketMq   |             |
+|            |ActiveMq   |             | 
+|            |ZeroMq     |            |  
+|            | KafKa     |            |  
 
+* 2020/02/15
+    - 初始化项目,第三个长期维护项目
 
 * 2020/03/22
     - 升级MySQL 8.0.19 
@@ -31,6 +33,9 @@
     - 在 Spring Boot 2.0 版本之后，官方已不推荐自己搭建定制了，而是直接提供了编译好的 jar 包。
     - 详情可以查看官网：https://zipkin.io/pages/quickstart.html
 
+* 2020/04/19
+    - 前段时间一直在忙着整自己的博客(原先的Hexo替换为了[VuePress](https://osvue.github.io))导致暂停更新的一段时间
+    - 从今天开始陆续更新Spring Cloud Alibaba
 
 # 番外篇
 **因为前期开发忘记了添加 `.gitignore` 文件 导致了 `target` 目录提交了上去,抱歉**

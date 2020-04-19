@@ -10,13 +10,13 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * @description: app
  * @author: Mr.Han
  * @create: 2020-03-14 10:53
- **/
+ */
 @SpringBootApplication
 @MapperScan(basePackages = {"com.qiangzi.springcloud.payment.mapper"})
 @EnableEurekaClient
 public class PayMentApp {
 
-    public static void main(String[] args) {
-        SpringApplication.run(PayMentApp.class,args);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(PayMentApp.class, args);
+  }
 }

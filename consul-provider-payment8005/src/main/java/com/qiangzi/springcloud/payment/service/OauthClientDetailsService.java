@@ -6,10 +6,8 @@ import java.util.List;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.qiangzi.springcloud.payment.mapper.OauthClientDetailsMapper;
 import com.qiangzi.springcloud.commons.domain.OauthClientDetails;
-/**
- * @author THE GIFTED
- */
+/** @author THE GIFTED */
 @Service
-public class OauthClientDetailsService extends ServiceImpl<OauthClientDetailsMapper, OauthClientDetails> implements IOauthClientDetailsService {
-
-}
+public class OauthClientDetailsService
+    extends ServiceImpl<OauthClientDetailsMapper, OauthClientDetails>
+    implements IOauthClientDetailsService {}

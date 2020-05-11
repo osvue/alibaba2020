@@ -37,5 +37,20 @@
     - 前段时间一直在忙着整自己的博客(原先的Hexo替换为了[VuePress](https://osvue.github.io))导致暂停更新的一段时间
     - 从今天开始陆续更新Spring Cloud Alibaba
 
+* 2020/04/23
+    - 
+## 框架集成
+
+集成 | 完成 
+----|----
+Spring Boot | ✔
+Spring Cloud Alibaba | ✔ 
+Spring Cloud Alibaba Nacos | ✔ 
+Spring Cloud Alibaba Sentinel | ✔ 
+Spring Security oAuth2 | ✔ 
+MyBatis Plus | ✔ 
+HikariCP | ✔ 
+OKHttp3 | ✔ 
+Feign 传递 Token | X 
 # 番外篇
 **因为前期开发忘记了添加 `.gitignore` 文件 导致了 `target` 目录提交了上去,抱歉**

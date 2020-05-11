@@ -1,15 +1,9 @@
-server:
-  port: 9001
-spring:
-  application:
-    name: alibaba-provider
-  cloud:
-    nacos:
-      discovery:
-        server-addr: localhost:8848 #配置Nacos地址
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
+spring:
+  profiles:
+    active: dev
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8888 #配置Sentinel dashboard地址
+        port: 8719

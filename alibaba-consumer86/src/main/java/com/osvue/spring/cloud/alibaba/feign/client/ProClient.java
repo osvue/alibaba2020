@@ -1,5 +1,7 @@
 package com.osvue.spring.cloud.alibaba.feign.client;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
+import com.qiangzi.springcloud.commons.utils.ResultBean;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,4 +17,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public interface ProClient {
   @GetMapping("/osvue")
   public String say();
+
+  @GetMapping(value = "/gtr")
+  public ResultBean<String> tsRes();
 }

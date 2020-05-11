@@ -12,11 +12,36 @@
   <artifactId>alibaba-nacos-provider</artifactId>
 
   <dependencies>
-    <!--SpringCloud ailibaba nacos -->
+
+    <!-- 引入自己定义的api通用包，可以使用Payment支付Entity -->
+    <dependency>
+      <groupId>com.qiangzi.springcloud</groupId>
+      <artifactId>commons</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <!--nacos-config-->
+    <dependency>
+      <groupId>com.alibaba.cloud</groupId>
+      <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+    </dependency>
+    <!--nacos-discovery-->
     <dependency>
       <groupId>com.alibaba.cloud</groupId>
       <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
     </dependency>
+
+    <!--SpringCloud ailibaba sentinel-datasource-nacos 后续做持久化用到-->
+    <dependency>
+      <groupId>com.alibaba.csp</groupId>
+      <artifactId>sentinel-datasource-nacos</artifactId>
+    </dependency>
+    <!--SpringCloud ailibaba sentinel -->
+    <dependency>
+      <groupId>com.alibaba.cloud</groupId>
+      <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+    </dependency>
+
     <!-- SpringBoot整合Web组件 -->
     <dependency>
       <groupId>org.springframework.boot</groupId>

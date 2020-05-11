@@ -1,6 +1,7 @@
 package com.osvue.spring.cloud.alibaba.controller;
 
 import com.osvue.spring.cloud.alibaba.feign.client.ProClient;
+import com.qiangzi.springcloud.commons.utils.ResultBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +23,11 @@ public class HelloController {
   @GetMapping(value = "public")
   public String sqy(){
     return proClient.say();
+  }
+
+  @GetMapping(value = "/sta")
+  public ResultBean<String> tsRes(){
+    return  proClient.tsRes();
   }
 }
  

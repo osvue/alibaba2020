@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TsResourceController {
 
-  @GetMapping(value = "/gtr")
+  @GetMapping(value = "/gtrss")
   @SentinelResource(value = "gtr", blockHandler = "errorHandle")
   public ResultBean<String> tsRes() {
     return new ResultBean<>("测试全局的ResultController");

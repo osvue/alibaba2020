@@ -38,7 +38,12 @@
     - 从今天开始陆续更新Spring Cloud Alibaba
 
 * 2020/04/23
-    - 
+    - add Alibaba Nacos Config and server point
+   
+* 2020/05/20
+    - 愿天下有情人都成了眷属，是前生注定事莫错过姻缘
+    - 因为疫情的原因以及up主本人工作调整, 最近在做WebLogic相关,故更新较少,请持续关注[Blog](https://osvue.github.io)
+        
 ## 框架集成
 
 集成 | 完成 

@@ -43,6 +43,13 @@
 * 2020/05/20
     - 愿天下有情人都成了眷属，是前生注定事莫错过姻缘
     - 因为疫情的原因以及up主本人工作调整, 最近在做WebLogic相关,故更新较少,请持续关注[Blog](https://osvue.github.io)
+
+* 2020/09/27
+    - 到首都了一段时间，最近在忙的是 **Linux** 相关，故而又推迟了更新，下一步准备加入 **Docker** 镜像
+    - **DockerFile--docker-compose** --》 kubernates --> jekenis
+    - Quartz Project [boot-quartz-antd_vue](https://github.com/osvue/springboot_quartz_vue.git) 敬请期待。。
+
+
         
 ## 框架集成
 
@@ -59,3 +66,11 @@ OKHttp3 | ✔
 Feign 传递 Token | X 
 # 番外篇
 **因为前期开发忘记了添加 `.gitignore` 文件 导致了 `target` 目录提交了上去,抱歉**
+
+
+---
+quick start 
+- A consul 注册中心 9500
+- B zipkin 链路追踪 9411
+- C configServer 配置中心 9999
+- D consul provider and consumer
